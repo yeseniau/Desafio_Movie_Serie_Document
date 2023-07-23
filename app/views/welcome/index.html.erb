@@ -1,0 +1,39 @@
+<p style="color: green"><%= notice %></p>
+<div>
+    <h1 class= "m-4">Peliculas, Series y Documentales</h1>
+</div>
+
+<div class="row">
+  <div class="col-sm-4 mb-3 mb-sm-0">
+    <div class="card">
+      <%= image_tag "series", height: '200', class: 'card-img' %>
+      <div class="card-body">
+        <h5 class="card-title">Series</h5>
+        <p class="card-text">Puedes consultar las peliculas disponibles o crear una nueva</p>
+        <%= link_to 'Ir a Series', '/series', class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 mb-3 mb-sm-0">
+    <div class="card">
+      <%= image_tag "movies", height: '200', class: 'card-img' %>
+      <div class="card-body">
+        <h5 class="card-title">Peliculas</h5>
+        <p class="card-text">Consulta y crea nuevos titulos de peliculas</p>
+        <%= link_to 'ir a Peliculas', '/movies', class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 mb-3 mb-sm-0">
+    <div class="card">
+      <%= image_tag "documentary", height: '200', class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title">Documentales</h5>
+        <p class="card-text">Puedes consultar doculentales interesantes y crear nuevos titulos</p>
+        <%= link_to 'Ir a Documentales', '/documentaryfilms', class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+</div>

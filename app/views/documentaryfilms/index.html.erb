@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Documentales</h1>
+<div  class= "new">
+  <%= link_to "New documentaryfilm", new_documentaryfilm_path , class: 'btn btn-primary'%>
+</div>
+
+
+
+<div id="documentaryfilms">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Synopsis</th>
+        <th scope="col">Director</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @documentaryfilms.each do |documentaryfilm| %>
+          <%= render documentaryfilm %>
+        <% end %>
+        
+    </tbody>
+  </table>
+</div>
